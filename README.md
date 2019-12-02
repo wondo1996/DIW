@@ -1,7 +1,8 @@
 # DIW
+
 Diseño de Interfaces Web
 
-##Componentes Utilizados
+## Componentes Utilizados
 
 1. Componente Navbar: Utilizado para el menú.
 2. Componente Dropdown: Utilizado dentro del Navbar para el desplegable.
