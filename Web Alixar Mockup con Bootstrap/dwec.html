@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>IES Alixar</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+        header {
+            background-color: #C6CE00;
+        }
+
+        /* Set black background color, white text and some padding */
+        footer {
+            background-color: #555;
+            color: white;
+            padding: 15px;
+        }
+
+        .carousel-inner img {
+            width: 100%;
+            max-height: 450px;
+        }
+
+        .carousel-inner {
+            max-height: 450px;
+        }
+
+        #github {
+            width: 30px;
+            height: 30px;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .header {
+                float: none;
+                text-align: left;
+            }
+
+            .header-right {
+                float: none;
+            }
+
+            #alumno {
+                height: 100px;
+                width: auto;
+            }
+
+            #logo {
+                height: 80px;
+                width: auto;
+
+            }
+
+            .display-4 {
+                font-size: 1.5rem;
+                line-height: 1.5;
+            }
+
+            p.lead {
+                font-size: small;
+            }
+
+            #github {
+                width: 20px;
+                height: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body class="container-fluid">
+    <header class="row">
+        <div class="col-2">
+            <img src="yo.jpg" id="alumno" class="img-fluid mt-2 ml-4 mb-2" alt="foto-alumno">
+        </div>
+
+        <div class="col-8">
+            <h1 class="display-4 mt-5">Web del Alumno Ángel Guerrero</h1>
+        </div>
+
+        <div class="col-2">
+            <img src="logoalixar.png" id="logo" class="img-fuid mt-4 " alt="logo-alixar">
+        </div>
+    </header>
+
+    <!-- Elemento navbar -->
+
+    <nav class="row navbar navbar-expand-lg navbar-light bg-success border border-left-0 border-right-0 border-dark">
+        <a class="navbar-brand" href="index.html"><img class="navbar-brand rounded-circle" src="logo.png"
+                alt="logo ies Alixar" width="40px">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon col-md-1"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="area_personal.html">Área personal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Noticias del Curso</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Asignaturas
+                    </a>
+                    <!-- Componente Dropdown -->
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" data-toggle="tooltip" data-placement="top"
+                            title="Desarrollo de Interfaces Web" href="diw.html">DIW</a>
+                        <a class="dropdown-item" data-toggle="tooltip" data-placement="top"
+                            title="Desarrollo Web Entorno Cliente" href="dwec.html">DWEC</a>
+                        <a class="dropdown-item" data-toggle="tooltip" data-placement="top"
+                            title="Desarrollo Web Entorno Servidor" href="dwes.html">DWES</a>
+                        <a class="dropdown-item" data-toggle="tooltip" data-placement="top"
+                            title="Despliegue de Aplicaciones Web" href="daw.html">DAW</a>
+                        <a class="dropdown-item" data-toggle="tooltip" data-placement="top"
+                            title="Empresa e Iniciativa Emprendedora" href="empresa.html">Empresa</a>
+                        <a class="dropdown-item" data-toggle="tooltip" data-placement="top"
+                            title="Horas de Libre Configuración" href="hlc.html">HLC</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="¿Qué quieres buscar?"
+                    aria-label="Search">
+                <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Buscar</button>
+            </form>
+        </div>
+    </nav>
+    <!-- Componente Breadcrumbs -->
+    <div class="row">
+        <div class="col-12">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+                    <li class="breadcrumb-item" aria-current="page">Asignaturas</li>
+                    <li class="breadcrumb-item active" aria-current="page">DWEC</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+
+    <div class="container">
+        <h2>(DWEC) Diseño Web en Entorno Cliente.</h2>
+        <p><strong>Consejo:</strong> Si pinchas sobre cualquier tema se abrira un desplegable con el contenido del
+            temario.
+        </p>
+        <div class="panel-group" id="accordion">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">TEMA 1</a>
+                    </h4>
+                </div>
+                <div id="collapse1" class="panel-collapse collapse in">
+                    <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                </div>
+                <hr>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">TEMA 2</a>
+                    </h4>
+                </div>
+                <div id="collapse2" class="panel-collapse collapse">
+                    <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                </div>
+                <hr>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">TEMA 3</a>
+                    </h4>
+                </div>
+                <div id="collapse3" class="panel-collapse collapse">
+                    <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                </div>
+                <hr>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">TEMA 4</a>
+                    </h4>
+                </div>
+                <div id="collapse4" class="panel-collapse collapse">
+                    <div class="panel-body">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi numquam
+                        error, temporibus sunt minima sed cum reprehenderit! Rerum eos asperiores beatae quisquam sint
+                        quo inventore atque, molestiae, ipsam hic fugiat.
+                        Sequi itaque aspernatur voluptatum ab nemo facilis delectus explicabo ullam labore? Commodi
+                        cupiditate aspernatur quidem nesciunt, excepturi inventore dolorum sint amet aut? Assumenda unde
+                        minima est culpa ullam voluptate temporibus.
+                        Amet esse officiis animi consequatur id, fugiat architecto doloremque vero. In distinctio
+                        consequatur eos facilis natus nemo ex dignissimos! Laborum recusandae earum perspiciatis dolores
+                        est eligendi tempora officiis velit atque?
+                        Sequi veritatis distinctio odio maiores, repudiandae dolor error vitae facilis accusamus
+                        adipisci magnam debitis omnis totam cupiditate? Ratione aspernatur, commodi autem quam quidem
+                        veniam unde exercitationem, quis quos error sed.
+                        Voluptates minus eaque aut et repudiandae voluptatum. Cumque alias velit enim commodi quam vero
+                        minima, qui quisquam harum! Eius error fugit voluptates deleniti in! Earum consequatur aperiam
+                        maxime ad culpa.
+                        Error expedita voluptates velit impedit aperiam at a suscipit. Dolores, magni! Sapiente
+                        necessitatibus nostrum dicta iste vitae reprehenderit, omnis et facere similique magnam iusto
+                        doloribus corrupti eaque reiciendis exercitationem! Eum.
+                        Non, officiis? Exercitationem nulla hic temporibus odio cupiditate, dicta necessitatibus labore
+                        neque qui tempore optio aliquid incidunt libero sed eaque! Nihil aliquam animi perspiciatis,
+                        dolor ex reiciendis sequi eum praesentium.
+                        Temporibus nostrum sunt error dolorum consectetur voluptatum porro, aperiam rem alias excepturi
+                        velit cumque ipsam? Saepe perferendis provident dolore doloremque cum consectetur, laboriosam
+                        velit, aut repellat ipsam asperiores fugit nesciunt.</div>
+                    <hr>
+                </div>
+            </div>
+
+
+            <div class="row"></div>
+            <!-- Componente Jombotron -->
+            <footer class="jumbotron jumbotron-fluid text-center text-dark py-4 bg-success col-12 mt-2"
+                style="min-width: 100%;">
+                <p class="lead"><span class="font-weight-bold mr-2">&copy;I.E.S Alixar 2019 - 2020 ~</span>
+                    Desarrollado
+                    por
+                    Ángel Guerrero Marín<a href="https://github.com/wondo1996/DIW.git"><img src="github.png" id="github"
+                            class="img-fluid float-right mr-5" alt="GitHub"></a></p>
+            </footer>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
